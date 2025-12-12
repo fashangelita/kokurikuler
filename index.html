@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motif Nusantara - AI Pengenal Batik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Motif Nusantara AI</h1>
+            <p>Pindai kain tradisional untuk melihat maknanya</p>
+        </header>
+
+        <main>
+            <div id="homepage" class="homepage">
+                <div class="welcome-section">
+                    <h2>Selamat Datang di SeniPola AI</h2>
+                    <p>Aplikasi cerdas untuk mengenal motif batik tradisional Indonesia. Dengan teknologi AI, kami membantu Anda memahami makna dan filosofi di balik setiap pola kain.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Apa itu Batik?</h3>
+                    <p>Batik adalah teknik pewarnaan kain dengan menggunakan malam (lilin) sebagai bahan penutup. Kata "batik" berasal dari bahasa Jawa yang berarti "titik-titik" atau "garis-garis". Batik telah diakui UNESCO sebagai Warisan Budaya Takbenda Manusia sejak tahun 2009.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>Ragam Batik Nusantara</h3>
+                    <p>Batik Indonesia memiliki berbagai ragam berdasarkan daerah asalnya, masing-masing dengan ciri khas motif dan filosofi yang berbeda. Setiap daerah memiliki kekhasan tersendiri dalam pola, warna, dan makna yang terkandung di dalamnya.</p>
+                </div>
+
+
+
+                <div class="cta-section">
+                    <button id="start-scan-btn">Mulai Pindai Batik</button>
+                </div>
+            </div>
+
+            <div class="camera-section hidden">
+                <div id="camera-frame">
+                    <video id="webcam" autoplay playsinline></video>
+                    <canvas id="snapshot" style="display:none;"></canvas>
+                    <div class="overlay"></div>
+                </div>
+
+                <div class="button-group">
+                    <button id="back-to-home-btn" class="back-btn">Kembali ke Beranda</button>
+                    <button id="capture-btn">Pindai Kain Sekarang</button>
+                </div>
+            </div>
+
+            <div id="result-panel" class="hidden">
+                <div class="result-header">
+                    <h2 id="motif-name">Nama Motif</h2>
+                    <span id="origin-tag">Asal Daerah</span>
+                </div>
+                <hr>
+                <div class="result-body">
+                    <h3>Filosofi:</h3>
+                    <p id="philosophy-text">Deskripsi makna akan muncul di sini.</p>
+                </div>
+                <div class="button-group">
+                    <button id="back-to-home-btn-result" class="back-btn">Kembali ke Beranda</button>
+                    <button id="reset-btn">Pindai Ulang</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

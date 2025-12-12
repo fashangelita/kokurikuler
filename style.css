@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea; /* Warna krem kertas kuno */
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #5d4037; /* Coklat Batik */
+    margin-bottom: 5px;
+}
+
+/* Homepage */
+.homepage {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.welcome-section h2 {
+    color: #5d4037;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Bagian Kamera */
+#camera-frame {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #000;
+    border: 5px solid #8d6e63;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%; height: 70%;
+    border: 2px dashed rgba(255,255,255,0.5);
+    pointer-events: none;
+}
+
+/* Tombol */
+button {
+    background: #5d4037;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover { background: #3e2723; }
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button-group button {
+    flex: 1;
+    width: auto;
+}
+
+/* Back Button */
+.back-btn {
+    background: #757575 !important;
+    border: 2px solid #5d4037;
+}
+
+.back-btn:hover {
+    background: #616161 !important;
+}
+
+/* Panel Hasil */
+.hidden { display: none; }
+
+#result-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    margin-top: 20px;
+}
+
+#origin-tag {
+    background: #d7ccc8;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
